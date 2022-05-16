@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 router.get('/',(req,res)=>{
-    res.send('pagina principal')
+    res.render('main.hbs')
 });
 
 

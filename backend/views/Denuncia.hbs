@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Denuncia</title>
+    <link rel="stylesheet" href="/css/denuncia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+        <img src="/assets/images/sea-lige-logo.png" alt="Logo de la org Sea Life">
+      <nav>
+        <ul>
+          <li><a href="/">Principal</a></li>
+          <li><a href="#">Denuncia</a></li>
+          <li><a href="#">Ayudanos</a></li>
+          <li><a href="#">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+        <section class="principal">
+          <h1>Denuncia</h1>
+          <p>Nosotros tenemos que poner de nuestra parte para que evitar que siga el daño hacia los mares y oceanos.
+              Si percibes que alguna persona, compañia o empresa, esta desechando reciduos que resultan contaminantes al océano  o
+              río que desembocará en el mar.</p>
+          <h3>¡Alza la voz! </h3>
+          <p>Todos podemos hacer notar lo que esta pasando</p>
+        </section>
+        <section class="denuncia">
+            <h2>Puedes hacer una denuncia aquí:</h2>
+            <form action="/formulariodenuncia" method="POST">
+                <div class="name">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="text" name="apellidopaterno" placeholder="Apellido Paterno">
+                    <input type="text" name="apellidomaterno" placeholder="Apellido Materno">
+                </div>
+                <input class="email" name="email" type="text" placeholder="Correo Electrónico">
+                <textarea name="texto" id="" cols="30" rows="10" placeholder="Descripción de la denuncia"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+      <div class="contacto">
+        <p>¡Conoce más!</p>
+        <div class="social-media">
+          <img src="/assets/images/social-media/twitter.png" alt="Logo de Twitter">
+          <img src="/assets/images/social-media/instagram.png" alt="Logo de Instagram">
+          <img src="/assets/images/social-media/facebook.png" alt="Logo de Facebook">
+          <img src="/assets/images/social-media/tiktok.png" alt="Logo de Tiktok">
+        </div>
+      </div>
+      <div class="extra-information">
+        <p>Términos y condiciones</p>
+        <a href="mailto:limpiandolaplaya.sealife@outlook.com">limpiandolaplaya.sealife@outlook.com</a>
+        <p>Sea Life 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>

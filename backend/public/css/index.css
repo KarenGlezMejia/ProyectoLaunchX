@@ -1,0 +1,223 @@
+@font-face {
+  font-family: Optician Sans;
+  src: url('../assets/fonts/Optician-Sans.ttf');
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --background-main: #F4EDE6;
+  --white20: #F3F3F6;
+  --white10: #2A2D2E;
+  --blue: #83CDD1;
+  --yellow:#D6A90B;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-main);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+  color: var(--white10);
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-letras-secundario);
+}
+a:hover{
+  text-decoration: underline;
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 160px;
+  background-color: var(--white20);
+}
+
+header img {
+  margin-left: 150px;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+header nav ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Optician Sans';
+}
+
+.wrapper {
+  max-inline-size: 950px;
+  margin: auto;
+  top: 50px;
+}
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 49px;
+}
+
+.section-content {
+  background: var(--blue);
+  padding: 0 7% 7% 7% ;
+  margin-top: 70px;
+}
+.section-content ~ .section-content{
+  background: var(--yellow);
+  margin-top: 0px;
+}
+
+.section-content ~ .section-content h2 {
+  margin-bottom: 87px;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 25px;
+}
+
+h2 ~ p {
+  color: var(--white20);
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.image-container p{
+  margin: 0;
+  margin-top: 37px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7%;
+}
+
+footer p {
+  margin: 31px 0;
+}
+
+footer .contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width:1119px){
+
+  header img{
+    margin-left: 50px;
+    height: 140px;
+    width: 130px;
+  }
+
+  .wrapper{
+   padding: 0 7%;
+  }
+
+  .image-container img {
+    width: 180px;
+    height: 180px;
+  }
+
+}
+
+@media (max-width:705px) {
+  header nav{
+    display: none;
+
+  }
+
+  .image-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  footer .contacto img {
+    width: 32px;
+    height: 32px;
+
+  }
+
+}
+
+@media (max-width:530px) {
+  header {
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .image-container img {
+    width: 180px;
+    height: 180px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 58px;
+  }
+  .image-container p{
+    margin: 0;
+  }
+  .image-container img{
+    margin: 0;
+    margin-top: 50px;
+  }
+
+
+
+}

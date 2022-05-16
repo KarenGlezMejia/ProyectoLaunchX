@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Optician Sans;
+  src: url('../assets/fonts/Optician-Sans.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --background-main: #F4EDE6;
+  --white20: #F3F3F6;
+  --white10: #2A2D2E;
+  --blue: #83CDD1;
+  --yellow: #D6A90B;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-main);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+  color: var(--white10);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-letras-secundario);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 160px;
+  background-color: var(--white20);
+}
+
+header img {
+  margin-left: 150px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Optician Sans';
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 10rem;
+  color: var(--yellow);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  max-inline-size: 900px;
+  margin: auto;
+  /* width: 100vw; */
+}
+
+.wrapper .confirmation img {
+  width: 230px;
+  height: 230px;
+  margin: 16px 0px 60px 0px;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.wrapper .confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 300px);
+  width: 100%;
+}
+
